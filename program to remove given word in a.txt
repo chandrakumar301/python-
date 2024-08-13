@@ -1,0 +1,10 @@
+# program to remove given word in a string 
+def fun(str,b,list):
+    for i in range(0,b):
+        if(str==list[i]):
+            list.remove(str)
+            return list
+list=["chandra","kumar","rahul","pollard"]
+str="chandra"
+b=len(list)
+print(fun(str,b,list))
