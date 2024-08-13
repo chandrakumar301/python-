@@ -1,0 +1,8 @@
+# biggest of three numbers using for loop 
+# create a list with three numbers 
+list=[23,54,34]
+i=0
+for i in range(len(list)-1):
+    if(list[i]>list[i+1]):
+        print("biggest of three numbers",list[i])
+    
