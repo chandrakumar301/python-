@@ -1,0 +1,8 @@
+#finding largest number in array
+arr=[50,25,67,78]
+sum=0;
+for i in range(len(arr)-1):
+    if(arr[i]<arr[i+1]):
+        sum=arr[i+1]
+print(sum)
+    
