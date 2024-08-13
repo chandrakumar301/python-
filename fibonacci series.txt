@@ -1,0 +1,11 @@
+#fibonacci series
+n=int(input("Enter a number : "))
+i=0
+first=0
+second=1
+for i in range(0,n):
+    third=first+second 
+    first=second
+    second=third
+    print(third)
+    
