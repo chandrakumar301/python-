@@ -1,0 +1,10 @@
+#program that calculate sum of sum of elements in a list
+def fun(list,b):
+    sum=0
+    for i in range(0,b):
+        sum+=list[i]
+    return sum
+list=[1,2,3,4,5,6,7]
+b=len(list)
+print(fun(list,b))
+        
