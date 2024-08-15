@@ -1,0 +1,13 @@
+#this is only for finding odd palindrome numbers this is not for even numbers
+a=777
+if(a%2==0):
+    print("its even number print any odd number")
+else:
+    c=a//2
+    list=[]
+    for i in range(a):
+        v=i//2
+        list.append(v)
+    for i in list:
+        if(c==i):
+            print("its palindrome"
