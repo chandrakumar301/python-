@@ -1,0 +1,8 @@
+def fun(list):
+    a=1
+    for i in list:
+        a*=i
+     return a
+list=[1,2,3,4,5]
+print(fun(list))
+        
