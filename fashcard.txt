@@ -1,0 +1,68 @@
+import random
+class FlashCard:
+    def __init__(self):
+        print("YOU ARE GOING TO CHECK  YOUR PERSONALITY TODAY")
+    def virat(self,number):
+        if(number==1):
+            return "ur virat Kohli's fan "
+    def sachin(self,number):
+        if(number==2):
+            return "ur a GOING to create wonder today"
+    def klrahul(self,number):
+        if(number==3):
+            return "Hey ur looking like kl rahul"
+    def abdevil(self,number):
+        if(number==4):
+            return "ur r a die hard fan of abd"
+    def pant(self,number):
+        if(number==5):
+            return "ur mad like devil"
+    def thala(self,number):
+        if(number==6):
+            return "ur looking like Thala"
+    def rat(self,number):
+        if(number==7):
+            return "u will become rich after 5 years "
+    def sin(self,number):
+        if(number==8):
+            return "u like girls more than books"
+    def rahul(self,number):
+        if(number==9):
+            return "u deserve her love she will be urs dont bother about that"
+    def devil(self,number):
+        if(number==10):
+            return "ur too dirty minded fellow"
+    def baby(self,number):
+        if(number==11):
+            return "ur madly loving someone dont be fool ok"
+    def life(self,number):
+        if(number==12):
+            return "ur looking too handsome "
+cl=FlashCard()
+print(cl)
+num=random.randrange(1,12)
+if(num==1):
+    print(cl.virat(1))
+if(num==2):
+    print(cl.sachin(2))
+if(num==3):
+    print(cl.klrahul(3))
+if(num==4):
+    print(cl.abdevil(4))
+if(num==5):
+    print(cl.pant(5))
+if(num==6):
+    print(cl.thala(6))
+if(num==7):
+    print(cl.rat(7))
+if(num==8):
+    print(cl.sin(8))
+if(num==9):
+    print(cl.rahul(9))
+if(num==10):
+    print(cl.devil(10))
+if(num==11):
+    print(cl.baby(11))
+if(num==12):
+    print(cl.life(12))
+    
