@@ -1,0 +1,18 @@
+class Volumes :
+    def __init__(self,length,breadth):
+        self.length=length
+        self.breadth=breadth
+class Rectangle(Volumes):
+    def area(self):
+        return self.length*self.breadth
+    def perimeter(self):
+        return 1/2*self.length*self.breadth
+class Square(Volumes):
+    def areaofsquare(self):
+        return 4*self.length*self.breadth
+square=Rectangle(10,20)
+print("Area of reactangle",square.area())
+print("perimeter of rectangle",square.perimeter())
+square1=Square(30,40)
+print("area of square",square1.areaofsquare())
+        
