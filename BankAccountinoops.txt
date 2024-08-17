@@ -1,0 +1,26 @@
+class BankAccount:
+    def __init__(self,accountnumber,balance,name):
+        self.accountnumber=accountnumber
+        self.balance=balance
+        self.name=name
+#display all details of user
+    def display(self):
+        return  self.accountnumber,self.balance,self.name
+# deposit method in banking
+    def Deposit(self,d):
+        return self.balance+d
+#withdeawal method in banking
+    def Withdrawal(self,w):
+        if(self.balance>w):
+            return self.balance-w
+        else:
+            return "insufficient funds"
+#bank fees in penalty in python 
+    def bankfees(self):
+        if(self.balance<1000):
+            return "ur fees is incremented by 200rs per month"
+newbank=BankAccount(143,3731,"chandrakumaryadav")
+print(newbank.Deposit(1))
+print(newbank.display())
+print(newbank.Withdrawal(3700))
+print(newbank.bankfees())
