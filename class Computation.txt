@@ -1,0 +1,37 @@
+class Computation:
+    def __init__(self):
+        print("this is a non-parameterized constucter")
+    def fact(self,number):
+        f=1
+        for i in range(1,number):
+            f=f*i
+        return f
+    def sum(self,number):
+        s=0
+        for i in range(1,number):
+            s=s+i
+        return s
+    def prime(self,number):
+        for i in range(2,number):
+            k=0
+            if(number%i==0):
+                k+=1
+                print("not a prime")
+                break
+            elif(k<=1):
+                print("prime number")
+                break
+    def multiples(self,number):
+        for i in range(1,10):
+            print(number,"*",i,"=",number*i)
+    def muldiv(self,number):
+        list=[]
+        for i in range(1,number):
+            if(number%i==0):
+                list.append(i)
+        for i in list:
+            print(i)
+com=Computation()
+print(com.prime(23))
+print(com.multiples(23))
+print(com.muldiv(12))
