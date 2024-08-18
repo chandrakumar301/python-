@@ -1,0 +1,10 @@
+n=10
+k=n
+b=0
+for i in range(0,n):
+    k=0
+    k=n-i
+    for j in range(n-i):
+        k-=1
+        print(k,end=" ")
+    print()
