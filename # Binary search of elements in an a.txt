@@ -1,0 +1,15 @@
+# Binary search of elements in an array 
+def Binarysearch(x,i,l,arr):
+    if(i==l):
+        return i
+    else:
+        mid=(i+l)//2
+        if(arr[mid]==x):
+            return mid
+        elif(x<arr[mid]):
+            return Binarysearch(x,i,mid-1,arr)
+        else:
+            return Binarysearch(x,mid+1,l,arr)
+arr=[10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200]
+n=len(arr)
+print(Binarysearch(200,0,n-1,arr))
