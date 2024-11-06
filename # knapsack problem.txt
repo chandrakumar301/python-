@@ -1,0 +1,25 @@
+# knapsack problem
+class Item:
+    def __init__(self,profit,weight):
+        self.profit=profit
+        self.weight=weight
+# initializing greedy method 
+def knapsack(arr,w):
+    arr1=[]
+    finalvalue=0
+    # first we want to sort the ratios of p/w
+    for i in arr:
+        arr1.append(i.profit/i.weight)
+    arr1.sort()
+    for item in arr:
+        if (item.weight<=w):
+            w-=item.weight
+            finalvalue+=item.profit
+            
+        else:
+            finalvalue+=item.profit*item.weight/w
+    return finalvalue
+if __name__ == "__main__":
+    w = 100
+    arr = [Item(60, 10), Item(100, 20), Item(130, 40)]
+    print(knapsack(arr,w))

@@ -4,7 +4,7 @@ p=0
 for i in range(2,n):
     if(n%i==0):
         p+=1
-        print("not a prime number")
+        print("Not a prime number")
         break
     elif(p<=1):
         print("Number is prime number")

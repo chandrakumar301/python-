@@ -1,0 +1,14 @@
+#Bubble sort by using recusion 
+def Bubblesort(a,n):
+    if(n==0):
+        return " "
+    for i in range(n-1):
+        if(a[i]>a[i+1]):
+            temp=a[i+1]
+            a[i+1]=a[i]
+            a[i]=temp
+    Bubblesort(a,n-1)
+    return a
+a=[10,5,7,3,2,1,9,6]
+n=len(a)
+print(Bubblesort(a,n))
